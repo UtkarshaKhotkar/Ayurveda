@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            display: flex;
+            
+        }
+        #sidebar {
+            width: 200px;
+            height: auto;
+            background-color: #eee2b3;
+            padding: 5px;
+            
+        }
+        #content {
+            flex: 1;
+            padding: 30px;
+            
+        }
+        #sidebar ul {
+            list-style-type: none;
+            padding: 20px;
+        }
+        #sidebar ul li {
+            margin-bottom: 50px;
+        }
+        #sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        #sidebar ul li a:hover {
+            color: #555;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+        #heading {
+            text-align: center;
+            align-items: flex-end;
+        }
+        header {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            margin-left: auto; 
+        }
+
+        img {
+            margin-right: auto; 
+            max-width: 100%; 
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ayurveda</h1>
+        <img src="hb1.jpg" height="100" width="150">
+    </header>
+    <button onclick="redirectToNextPage()" style="margin-bottom: 20px;">Ask here!</button>
+    <nav>
+        <a href="about.html">About </a>
+        <a href="Home.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="qna.html">FAQ's</a>
+    </nav>
+    
+    <div id="container">
+        <div id="sidebar">
+            <ul style=>
+                <li><a href="problems.html">Problems and their solutions</a></li>
+                <li><a href="tips.html">Tips with Ayurveda</a></li>
+                <li><a href="hist.html">History of Ayurveda</a></li>
+                <li><a href="herb.html">Ayurvedic herbs </a></li>
+                <li><a href="about.html">About us </a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Tips with Ayurveda</h1>
+            <h3> Everyday strategies to improve your life <br> <br>
+                Here below is a collection of everyday tips and strategies to improve your health and lifestyle, drawing upon 
+                timeless Ayurvedic principles and modern science. The purpose of this material is to empower every reader to
+                 make incremental changes to the way we eat, sleep, exercise, work, communicate and engage with this thing called 
+                 "life". Ayurveda, after all, means The Science of Life. In addition to Ayurveda tips, there are write-ups on various
+                  topics that help us to understand the philosophy of Ayurveda, what it has to offer and how it can enrich our 
+                  lives<br> <br>
+                    Here are some simple ayurvedic practices to perform for a healthy lifestyle:<br>
+                   <li> Morning routine(Dinacharya): Tongue scraping, Oil pulling, Drinking warm water with lemon</li>
+                   <li> Healthy eating habits: Eating according to body type or dosa(Vata, pitta or kapha), paying attention to meal time and 
+                eating mindfully.</li>
+                <li>Yoga and pranayama for good posture and breathing, also for a balanced mind and body.</li>
+                <li>Daily exercises can include walking, cycling or swimming for a refreshed body and mind.</li>
+                <li>Adequate sleep and rest play a crucial role in the overall health of a person. A sleep schedule needs to be followed.</li>
+                <li>Stress management can be done in any way like meditation, walking, self-care routines, etc. One must have a stress management
+            routine.</li>
+                <li>Herbal remedies are a great way for starting the day with a fresh mind and body. A herbal tea with tulsi, ashwagandha, neem ,
+            adrak(ginger), etc can make one's body nourished as well as purified.</li>
+               <li> Hydration is necessary for one's body. Having plenty of water purifies the body and flushes out the toxins leaving the body 
+            hydrated.</li>
+               <li> Mindful eating is an important habit for one to have. Being aware about what you eat, how you eat, how many times and how you 
+            chew the food is a need.</li>
+                <li>Self massage(Abhyanga): Regular self-massages can improve blood circulation and provide relaxation to tensed muscles. 
+            Massages need to be done in circular motions on the tensed areas of the body.</li> </h3>
+            
+            <script>
+                function redirectToNextPage() {
+                    
+                    window.location.href = "bot.html";
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            display: flex;
+            
+        }
+        #sidebar {
+            width: 200px;
+            max-height: auto;
+            background-color: #eee2b3;
+            padding: 5px;
+            
+        }
+        #content {
+            flex: 1;
+            padding: 30px;
+            font-size: 20px;
+            
+        }
+        #sidebar ul {
+            list-style-type: none;
+            padding: 20px;
+        }
+        #sidebar ul li {
+            margin-bottom: 50px;
+        }
+        #sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        #sidebar ul li a:hover {
+            color: #555;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+        #heading {
+            text-align: center;
+            align-items: flex-end;
+        }
+        header {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            margin-left: auto; 
+        }
+
+        img {
+            margin-right: auto; 
+            max-width: 100%; 
+        }
+        .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    box-sizing: border-box;
+    padding: 100px;
+  }
+
+  
+  .button-container {
+    flex: 1;
+    text-align: center;
+  }
+  .button-container button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Style for the image */
+  .image-container {
+    flex: 1;
+    text-align: right;
+    height: 150px;
+    width: 150px;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: 500px;
+
+    width: 850px;
+    display: block;
+    border-radius: 5px;
+  }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ayurveda</h1>
+        <img src="hb1.jpg" height="100" width="150">
+    </header>
+    <button onclick="redirectToNextPage()" style="margin-bottom: 20px;">Ask here!</button>
+    <nav>
+        <a href="about.html">About </a>
+        <a href="Home.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="qna.html">FAQ's</a>
+    </nav>
+    
+    <div id="container">
+        <div id="sidebar">
+            <ul style=>
+                <li><a href="problems.html">Problems and their solutions</a></li>
+                <li><a href="tips.html">Tips with Ayurveda</a></li>
+                <li><a href="hist.html">History of Ayurveda</a></li>
+                <li><a href="herb.html">Ayurvedic herbs </a></li>
+                <li><a href="about.html">About us </a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Skin-Problems</h1>
+            <h3>The skin is the first line of defence for the body. This is why it is susceptible to infections 
+                and other problems. Skin diseases like eczema, psoriasis and conditions like acne and rosacea can 
+                cause irritating symptoms. Creams that contain steroids can cause side effects. This is why there
+                 is a need for help that is gentle on the skin. Ayurveda offers such help that suggests a holistic
+                  approach to helping to manage skin problems. Ayurvedic medicine for skin can help manage skin diseases 
+                  in an effective way.<br><br>
+                  Understanding skin types<br>
+Ayurvedic skin care treatments are based on skin type.<br>
+<br>
+According to Ayurveda, a person’s skin type is based on the three doshas. These are bioenergetic or life forces that make up the constitution of the body and mind. They are:
+<br><br>
+<li>vata (wind)</li>
+<li>pitta (fire)</li>
+<li>kapha (water and earth)</li><br><br>
+-Vata<br>
+According to the Ayurvedic tradition, a vata-dominant person has dry and rough skin that tends to wrinkle if not moisturized regularly.
+<br>
+“Vata-type skin has fewer fat deposits and needs more moisturizing, both externally and internally,” says Varalakshmi Yanamandra, Ayurvedic health coach and director of Ayur Wellness & Pain Centre.
+<br>
+She recommends using oil-based moisturizers on the skin and consuming warm spices like ginger. She also suggests that ashwagandha, an ancient Indian herb, may reduce skin dryness when added to a face mask.
+<br><br>
+-Pitta<br>
+People with high pitta tend to have oily skin that may be prone to acne and rosacea.<br>
+
+“This type of skin needs more cooling elements like aloe vera, turmeric (which is anti-inflammatory), and sandalwood (which reduces pimples and redness),” says Yanamandra.
+<br><br>
+-Kapha<br>
+Kapha skin tends to be cold and oily, and it may be prone to pimples, whiteheads, and water retention. Yanamandra recommends dry brushing to remove obstructions, stimulate the lymphatic system, and exfoliate.
+<br>
+She also suggests avoiding oil-based creams and applying face masks regularly.
+<br>
+<br>
+DIY Ayurvedic face mask recipes<br><br>
+In most Indian households, like the one I grew up in, you’ll likely find the kitchen ingredients necessary for a traditional face mask.
+<br>
+Chickpea, or Bengal gram, flour is the most common. You can add a pinch of turmeric and milk, lime juice, or rose water to turn it into a paste for a classic Indian skin care recipe.
+<br>
+It’s important to remember that, according to Ayurveda, different skin types require different kinds of skin care. And if you have any concerns with the ingredients in a DIY face mask, it’s important to consult a medical professional for their advice.
+<br>
+Our experts recommend separate face masks and specific routines for vata, pitta, and kapha skin.      <br><br>
+
+-Vata face mask<br><br>
+Ingredients<br>
+
+<li>1 tbsp. chickpea flour</li>
+<li>a pinch of turmeric powder</li>
+<li>1/4 cup rose water, yogurt, or cold milk</li>
+Directions
+
+<li>Mix together the ingredients to make a paste.</li>
+<li>Apply to the face and leave on for 10–15 minutes, or just before it dries.</li>
+<li>Wash off with lukewarm water.</li>
+<li>Apply an oil-based moisturizer. Sesame oil can also be used.</li>
+Pitta face mask
+Ingredients
+
+<li>1/4 cup aloe vera gel (make sure there are no other ingredients or additives)</li>
+<li>a few drops of rose water</li>
+<li>1–3 cotton balls</li>
+Directions
+
+<li>Soak a cotton ball in rose water and dab on skin to cleanse.</li>
+<li>Apply aloe vera gel and leave on skin for 10–15 minutes.</li>
+<li>Wash off with lukewarm water.</li>
+<li>Apply a gentle moisturizer, such as products containing geranium oil.</li>
+<li>Repeat 2–3 times a week.</li>
+Kapha face mask version 1
+Ingredients
+
+<li>1 tsp. honey</li>
+<li>a pinch of turmeric powder</li>
+Directions
+
+<li>Mix honey and turmeric powder.</li>
+<li>Apply to skin and leave on for </li>10 minutes.</li>
+<li>Wash off with lukewarm water.</li>
+<li>Kapha face mask version 2</li>
+Ingredients
+
+<li>Multani mitti, also known as fuller’s earth</li>
+<li>water</li>
+Directions
+
+<li>Mix Multani mitti with water.</li>
+<li>Apply to skin and leave on for 10–15 minutes.</li>
+<li>Wash off with lukewarm water.</li>
+<li>Face mask for all skin types</li>
+Ingredients
+
+<li>2 tbsp. fine oat flour</li>
+<li>2 tsp. almond flour</li>
+<li>a pinch of turmeric powder</li>
+<li>2–5 drops oil of your choice</li>
+Directions
+
+<li>Mix the powdered ingredients together.</li>
+<li>Add a few drops of oil.</li>
+<li>Apply a thick coat onto the skin and leave on for 15 minutes.</li>
+<li>Wash off with lukewarm water.</li>
+<li>This paste can also be used for the whole body.</li>
+
+Ayurveda for skin diseases
+Ayurvedic tradition includes treatments for skin diseases, but there isn’t much scientific evidence supporting their use. Still, Ayurveda may be a helpful complement to medical treatment for a variety of skin conditions.
+
+Ayurveda classifies skin diseases as maha kushta or kshudra kushta.
+
+Maha kushta includes major skin conditions, like:
+
+<li>scleroderma (systemic sclerosis)</li>
+<li>furuncle (boils)</li>
+<li>psoriasis</li>
+<li>eczema</li>
+<li>rosacea</li>
+<li>Kshudra kushta includes minor skin symptoms, like:</li>
+
+<li>dryness</li>
+<li>roughness</li>
+<li>discoloration</li>
+<li>hyperpigmentation</li>
+<li>itching</li>
+According to Ayurveda, minor symptoms are caused by a dominance of a specific dosha. Those experiencing minor symptoms may see improvement through dietary changes and at-home skin care remedies.
+
+Major conditions may require the expertise and supervision of an Ayurvedic practitioner.
+
+For instance, Yanamandra says eczema is thought to be caused by a dominance of kapha. Some people may find that herbs, like gotu kola and giloy, incorporated into their diet help soothe their eczema. She also recommends using coconut oil and camphor to provide eczema and rosacea relief.
+
+Eczema and rosacea relief
+Ingredients
+
+<li>2–3 drops camphor essential oil</li>
+<li>1 tsp. coconut oil</li>
+<li>Directions</li>
+
+<li>Mix the coconut oil with the camphor.</li>
+<li>Apply to the skin, focusing on dry patches.</li>
+<li>Wash off after 10–15 minutes.</li>
+<br>
+CAMPHOR WARNING<br><br>
+Never use products containing more than 11 percentTrusted Source camphor, and don’t apply products with camphor to broken 
+skin or to the insides of the nose or mouth. Camphor is toxic if ingested or absorbed through the mucus membrane. Take care
+ to keep camphor and camphor-containing products away from children.
+<br>
+Always do a skin patch test before using camphor on your skin. Apply a small amount to your inner forearm and wait 24 hours
+ to see if a reaction occurs.<br><br>
+
+ <h4>References-https://www.healthline.com/health/beauty-skin-care/ayurvedic-skin-care#skin-diseases</h4>
+
+
+        </h3>
+        <script>
+            function redirectToNextPage() {
+                
+                window.location.href = "bot.html";
+            }
+        </script>
+           
+    </div>
+</body>
+</html>

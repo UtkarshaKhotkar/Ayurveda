@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            display: flex;
+            
+        }
+        #sidebar {
+            width: 200px;
+            height:auto;
+            background-color: #eee2b3;
+            padding: 5px;
+            position: static;
+            
+        }
+        #content {
+            flex: 1;
+            padding: 30px;
+            
+        }
+        #sidebar ul {
+            list-style-type: none;
+            padding: 20px;
+        }
+        #sidebar ul li {
+            margin-bottom: 50px;
+        }
+        #sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        #sidebar ul li a:hover {
+            color: #555;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+        #heading {
+            text-align: center;
+            align-items: flex-end;
+        }
+        header {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            margin-left: auto; 
+        }
+
+        img {
+            margin-right: auto; 
+            max-width: 100%; 
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ayurveda</h1>
+        <img src="hb1.jpg" height="100" width="150">
+    </header>
+    <button onclick="redirectToNextPage()" style="margin-bottom: 20px;">Ask here!</button>
+    
+    <nav>
+        <a href="about.html">About </a>
+        <a href="Home.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="qna.html">FAQ's</a>
+    </nav>
+    
+    <div id="container">
+        <div id="sidebar">
+            <ul style=>
+                <li><a href="problems.html">Problems and their solutions</a></li>
+                <li><a href="tips.html">Tips with Ayurveda</a></li>
+                <li><a href="hist.html">History of Ayurveda</a></li>
+                <li><a href="herb.html">Ayurvedic herbs </a></li>
+                <li><a href="about.html">About us </a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Ayurveda</h1>
+            <h2>Questions about Ayurveda</h2>
+            <h3>1.What are ayurvedic treatments?<br>
+                -There are many treatments in the Ayurvedic toolbox for rebalancing health. They include:<br>
+                
+                -Lifestyle changes like going to bed at a regular time<br>
+                -Diet changes like eating more warm foods or oils or greens<br>
+                -Herbs – in many forms, loose powder, capsules, teas, medicated ghee/oil, tinctures, honey balls.<br>
+                -Body treatments<br>
+                -PanchaKarma – deep cleansing and rejuvenation process<br>
+                -Yoga, Meditation<br>
+                -Aromatherapy, Color Therapy<br><br>
+            
+                2.Does Ayurvedic medicine have side effects?<br>
+There can be a detox effect which can take the form of mild flu-like symptoms, or a rash. This usually is a normal 
+reaction and means that the herbs are doing their job. Sometimes the reaction can be stronger and usually the practitioner
+ makes an adjustment in the dosing.<br><br>
+
+                3.Where does Ayurvedic medicine come from?<br>
+Nature! Ayurveda remedies are all based on the concept that you can eat your therapies. That is why there is such an
+ emphasis on making sure that the herbs, oils, and other substances come from clean sources so that we don’t create 
+ more toxins in the body.<br><br>
+
+                4.Why is Ayurveda important?<br>
+                Ayurveda treats the root cause of disease and allopathic methods treat symptoms. Ayurveda goes after the
+                 root cause which will have a more longstanding effect.<br>
+                
+                Ayurveda allows you to take the reins of your own health. You don’t have to wait for a prescription or undergo
+                 unnecessary tests. For example, if you normally have a pattern of getting a little constipated in fall, then 
+                 prior to fall you would start eating more warm cooked moderately spiced foods, ingest more healthy oils, take
+                  in more water and warm herbal teas, return to a more regular routine, avoid cold & drying foods.<br><br>
+
+                  5.How do you drink ghee in the morning?<br>
+                  You add hot water to melt the ghee and then drink it on an empty stomach. You don’t eat until you are
+                   genuinely hungry later that day.<br>
+                  <br>
+                  6.How do you do Basti at home?<br>
+                  You lie on the bathroom floor on your left side, insert the enema tubing or bottle filled with medicated 
+                  oil or tea, and then hold it for as long as you can. Once you get the urge to defecate, you will then use 
+                  the toilet to release the oil or tea.  You then wear pad or disposable underpants overnight to catch any 
+                  leaking oil or tea.  You are fine to wear your normal undergarments the next morning.<br><br>
+
+                  7.Do you lose weight with Panchakarma?<br>
+                  Most people lose weight on a panchakarma. It varies greatly depending on what was in the diet prior to the
+                   PK. PK primes the body for more significant weight loss especially if you stay with a simple diet for a 
+                   longer period of time.<br>
+                  <br>
+                  
+                  <script>
+                    function redirectToNextPage() {
+                        
+                        window.location.href = "bot.html";
+                    }
+                </script>
+                  
+            </h3>
+            <h4>https://vibranthealthayurveda.com/faq/</h4>
+        </div>
+    </div>
+</body>
+</html>

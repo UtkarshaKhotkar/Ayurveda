@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+           
+        }
+        #container {
+            display: flex;
+            
+        }
+        #sidebar {
+            width: 200px;
+            height: auto;
+            background-color: #eee2b3;
+            padding: 5px;
+            
+        }
+        #content {
+            flex: 1;
+            padding: 30px;
+            font-size: 20px;
+            
+        }
+        #sidebar ul {
+            list-style-type: none;
+            padding: 20px;
+        }
+        #sidebar ul li {
+            margin-bottom: 50px;
+        }
+        #sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        #sidebar ul li a:hover {
+            color: #555;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+        #heading {
+            text-align: center;
+            align-items: flex-end;
+        }
+        header {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            margin-left: auto; 
+        }
+
+        img {
+            margin-right: auto; 
+            max-width: 100%; 
+        }
+        .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    box-sizing: border-box;
+    padding: 100px;
+  }
+
+  /* Style for the buttons */
+  .button-container {
+    flex: 1;
+    text-align: center;
+  }
+  .button-container button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Style for the image */
+  .image-container {
+    flex: 1;
+    text-align: right;
+    height: 150px;
+    width: 150px;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: 500px;
+
+    width: 850px;
+    display: block;
+    border-radius: 5px;
+  }
+  .container {
+            width:auto;
+            margin: 0 auto; 
+            background-color: #ece3ba;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-block:  50px;
+            border-color: #333;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ayurveda</h1>
+        <img src="hb1.jpg" height="100" width="150">
+    </header>
+    <button onclick="redirectToNextPage()" style="margin-bottom: 20px;">Ask here!</button>
+    <nav>
+        <a href="about.html">About </a>
+        <a href="Home.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="qna.html">FAQ's</a>
+        
+    </nav>
+    
+    <div id="container">
+        <div id="sidebar">
+            <ul style=>
+                <li><a href="problems.html">Problems and their solutions</a></li>
+                <li><a href="tips.html">Tips with Ayurveda</a></li>
+                <li><a href="hist.html">History of Ayurveda</a></li>
+                <li><a href="herb.html">Ayurvedic herbs </a></li>
+                <li><a href="about.html">About us </a></li>
+            </ul>
+        </div>
+        
+        <div id="content">
+            <h1>Problems and their solutions</h1>
+            <h3>
+
+
+
+        </h3>
+        <div class="container">
+            
+
+            
+            <ul style=>
+                
+                <li style="padding: 20px;"><a href="St.html">Stomach ache </a></li></div>
+                <div class="container">
+                <li style="padding: 20px;"><a href="Head.html">Headache</a></li></div>
+
+                <div class="container">
+                <li style="padding: 20px;"><a href="sp.html">Skin problems</a></li></div>
+
+                <div class="container">
+                <li style="padding: 20px;"><a href="hp.html">Hair problems</a></li></div>
+
+                <div class="container">
+                <li style="padding: 20px;"><a href="cc.html">Cold and cough</a></li></div>
+            </ul>
+            
+               
+            <script>
+                function redirectToNextPage() {
+                    
+                    window.location.href = "bot.html";
+                }
+            </script>
+
+
+          
+            <div class="image-container">
+             
+            
+            
+          
+
+          </div>
+        </div>
+    </div>
+</body>
+</html>

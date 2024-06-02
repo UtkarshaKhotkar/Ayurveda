@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            display: flex;
+            
+        }
+        #sidebar {
+            width: 200px;
+            max-height: auto;
+            background-color: #eee2b3;
+            padding: 5px;
+            
+        }
+        #content {
+            flex: 1;
+            padding: 30px;
+            font-size: 20px;
+            
+        }
+        #sidebar ul {
+            list-style-type: none;
+            padding: 20px;
+        }
+        #sidebar ul li {
+            margin-bottom: 50px;
+        }
+        #sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        #sidebar ul li a:hover {
+            color: #555;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+        #heading {
+            text-align: center;
+            align-items: flex-end;
+        }
+        header {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            margin-left: auto; 
+        }
+
+        img {
+            margin-right: auto; 
+            max-width: 100%; 
+        }
+        .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    box-sizing: border-box;
+    padding: 100px;
+  }
+
+  
+  .button-container {
+    flex: 1;
+    text-align: center;
+  }
+  .button-container button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+ 
+  .image-container {
+    flex: 1;
+    text-align: right;
+    height: 150px;
+    width: 150px;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: 500px;
+
+    width: 850px;
+    display: block;
+    border-radius: 5px;
+  }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ayurveda</h1>
+        <img src="hb1.jpg" height="100" width="150">
+    </header>
+    <button onclick="redirectToNextPage()" style="margin-bottom: 20px;">Ask here!</button>
+    <nav>
+        <a href="about.html">About </a>
+        <a href="Home.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="qna.html">FAQ's</a>
+    </nav>
+    
+    <div id="container">
+        <div id="sidebar">
+            <ul style=>
+                <li><a href="problems.html">Problems and their solutions</a></li>
+                <li><a href="tips.html">Tips with Ayurveda</a></li>
+                <li><a href="hist.html">History of Ayurveda</a></li>
+                <li><a href="herb.html">Ayurvedic herbs </a></li>
+                <li><a href="about.html">About us </a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Hair-Problems</h1>
+            <h3>Many Indian mothers and grandmothers have traditionally pampered their children with oily, herbal 
+                head massages. Afterward, they might apply sudsy reetha, also known as soapnuts, and rinse with fragrant water.
+<br>
+                This care and attention is believed to lead to thick, lustrous, healthy hair.
+                <br>
+                These practices can be traced back to Hindu myths and religious texts, known as the Vedas. In them, 
+                angry deities had unruly hair, while patient ones had thick, curly locks or smooth braids.
+                <br>
+                These myths, and the Ayurvedic practices that support, them are part of traditional hair care in India.
+                 You can apply these same remedies at home to encourage hair growth and get shiny, bouncy tresses.<br>
+<br>Working with your hair type <br><br>
+Ayurveda teaches that a healthy body and mind will result in healthy hair and scalp, leading to optimum hair growth.
+<br><br>
+-Vata hair qualities<br>
+<li>A vata person has a higher proportion of air and ether. A person with a balanced vata dosha is likely to have naturally wavy hair and a rather dry scalp.</li>
+<br>
+<li>They’re also likely to have porous hair. This means the hair absorbs products and dyes well. This also means that hair strands take in dust, smoke, and toxins in the air and are prone to breakage and damage.</li>
+<br>
+<li>When the overall vata dosha is imbalanced, the individual may develop an oily scalp with itchy dandruff and hair fall, or sluggish hair growth.</li>
+<br><br>
+-Pitta hair qualities<br>
+<li>Pitta types have a greater proportion of fire and water or fire and air. A person with a balanced pitta dosha will likely have naturally straight, silky hair.</li>
+<br>
+<li>Their hair is moderately resistant to hair dyes and colors, because the hair follicle is typically dense. This means it’s resistant to both topically applied nutrients and air-pollution.</li>
+<br>
+<li>An imbalanced pitta dosha can cause dryness or oiliness on the scalp, depending on the proportions of air and water. Imbalanced pitta may also result in hair fall and sluggish hair growth.</li>
+<br><br>
+-Kapha hair qualities<br>
+<li>Kapha types have a higher proportion of earth and water. A person with a balanced kapha dosha will likely have naturally curly hair with coarse texture and an oily scalp.</li>
+<br>
+<li>The hair follicle is often very dense and doesn’t take in nutrients or dyes easily. When this dosha is unbalanced, hair may become fine and brittle, and it may break easily.</li>
+<br>
+<li>Kapha types are the least likely to experience hair loss, but their hair may be slow to grow.</li>
+<br><br>
+-Ayurvedic hair care basics<br>
+Since everyone’s doshas are a little different, a hair growth regimen that works for one person might not work for someone else.
+<br><br>
+The following factors all make up comprehensive Ayurvedic hair care:
+<br>
+<li>healthy mind and emotions</li>
+<li>optimal nutrition</li>
+<li>hair oiling and washing</li>
+<li>scalp massage</li>
+<li>herbal treatments</li><br><br>
+Creating a customized routine for your particular hair type is the first step in encouraging hair growth.
+<br><br>
+Mind and emotions<br>
+A major tenet of Ayurveda is that all disease originates in the mind. This means that doshic imbalances usually begin with imbalances in our emotions and mental state.
+<br>
+While your mental-emotional state might seem to have little to do with hair growth, there’s some science to support this idea.
+<br>
+For one, a 2020 study showed that hormones have a major influence on hair. A 2017 study suggested that chronic stress, excessive exercise, smoking, and drinking can lead to hair loss.
+<br>
+A 2019 studyTrusted Source indicated that hair disorders may have psychiatric and psychosocial aspects. Taking care of your mental health is the first step in being healthy, even when it comes to hair growth.
+<br><br>
+Nutrition<br>
+In Ayurveda, following a good hair care regimen includes eating well, offering the hair follicles nourishment from within. This may help prevent hair loss and lead to new growth.
+<br><br>
+Best practices include:<br>
+<br>
+a diet rich in dosha-specific fruits and vegetables
+a moderate amount of healthy fat, like ghee or nuts
+digestive aids like cumin, turmeric, ginger, and honey
+herbal supplements, like Triphala, to balance the doshas
+Eating dosha-specific, seasonally available fruits and vegetables is ideal when possible. This includes:
+<br>
+<li>heavy and nourishing foods for vatas</li>
+<li>cooling, calming foods for pittas</li>
+<li>bitter or astringent foods for kaphas</li>
+Foods containing a balanced proportion of vitamins and minerals, plus a healthy amount of protein, are always best.
+<br>
+A moderate amount of ghee and nuts nourishes the body with healthy fats. Fat can also translate into shiny, well-nourished hair.
+<br>
+Adding small amounts of cumin, turmeric, ginger, and honey aid the digestive juices to promote absorption of nutrients.
+<br>
+Taking Triphala as an herbal supplement in the morning is another common Ayurvedic practice to improve digestion and keep dosha imbalancesTrusted Source in check. Triphala is Sanskrit for “three fruits” and refers to a combination of Haritaki, Bibhitaki, and amla/amalaki that work together to balance all the doshas.
+<br><br>
+Hair oiling and washing
+Hair oils help nourish the hair follicles, as well as the scalp. Simply adding hair oiling to your routine can encourage hair growth and deeply moisturize the hair you already have.
+<br><br>
+The best oils by type are:
+<br>
+<li>almond or sesame oil for vatas</li>
+<li>coconut or almond oil for pittas</li>
+<li>olive oil for kaphas</li>
+“You can use plain coconut oil or sesame oil, or purchase an herbal oil that’s made especially for the purpose. An herbal oil will contain extracts of Indian herbs, like amla and rose petals. You might find up to 20 herbs in one formula,” says Ghanima Abdullah, a cosmetologist and hair expert at The Right Hairstyles.
+<br>
+Consider Life & Pursuits Organic Bhringraj Scalp Therapy with amla, hibiscus, and neem or the Banyan Botanicals Organic Healthy Hair Oil with bhrami, amalaki, hibiscus, and rose.
+<br>
+It’s ideal to oil the hair 2 times per week and wash with shampoo afterward. Washing more frequently may strip the hair of its natural oils and discourage optimal growth.
+<br><br>
+Scalp massage<br>
+Regardless of dosha, Ayurvedic recommends a warm oil head massage followed by 20 minutes of rest before washing your hair.
+<br>
+“Gentle scalp massages with herbal oil can do wonders for hair growth and general conditioning,” Abdullah says. “Sometimes, the oils are warmed and poured over the scalp and forehead, then massaged in. Another practice is to massage the neck and shoulders in addition to the scalp.”
+<br>
+A 2016 studyTrusted Source showed that 4 minutes of scalp massage per day for 24 weeks increased hair growth in Japanese males.
+<br><br>
+Herbal hair care<br>
+In Ayurveda, the fruits from the reetha (Sapindus mukorossi) and shikakai (Senegalia rugata) plants are added to warm water and converted into a frothy, soapy, shampoo-like product. This mixture maintains the moisture of the hair strand, and the water is used to clean and nourish the hair.
+<br>
+Although harder to come by in its natural form, many shampoos include extracts from these fruits.
+<br>
+Try the Om Botanical Anti-Hair Loss Organic Shampoo, which contains reetha, or the Havintha Natural Hair Shampoo Powder with amla, reetha, and shikakai. The iHeart Nature Organic Bar Shampoo is another option that contains amla, shikakai, neem, and hibiscus.
+<br>
+Beyond cleaning hair, herbal remedies can help improve hair health. In addition to applying warm herbal oils prior to a hair bath, herbs can be included as part of:
+<br>
+scalp and hair masks
+cold and warm hair rinses
+hair teas or soaks
+You only need a few simple herbs to make a hair tea or rinse. Dried powders, flowers, leaves, and herbs are some favorites in Ayurveda when it comes to hair care. These include:
+<br>
+<li>rose petals</li>
+<li>green tea leaves</li>
+<li>neem</li>
+<li>tulsi, or holy basil</li>
+<li>amla</li>
+<li>henna</li>
+<li>hibiscus</li>
+<li>Rose petals</li><br>
+These have a sweet effect and are said to be calming to all doshas. It’s best added to a lukewarm bath or cold rinse to retain the delicate aromatic oils. Rose oil makes a great ingredient for clay masks.
+<br>
+Green tea<br>
+This tea is warming, astringent, and may help decrease the kapha dosha. Warm green tea makes a good hair rinse for shiny and bouncy hair.
+<br>
+You can mix green tea powder with rose water to create a fragrant, stimulating scalp mask.
+<br>
+There’s some research that green tea stimulates hair growth, but the study was done on rats.
+<br><br>
+Neem<br>
+This makes a versatile addition to your beauty regimen, particularly for hair. It’s cooling, antimicrobial, antibacterial, and can help control dandruff.
+<br>
+Fresh neem leaves can be used to make a warm hair tea or used as a warm hair rinse. Neem powder can be made into a paste with tap water and used as a hair and scalp mask.
+<br><br>
+Tulsi<br>
+Tulsi, or holybasil, is considered warming and helps promote hair growth. Fresh tulsi leaves are ideal in a warm rinse, either on their own or mixed with green tea leaves.
+<br>
+Tulsi leaf powder makes a great paste for a dry and irritated scalp, especially when mixed with aloe gel for a cooling preparation that’s easy to apply.
+<br>
+Amla<br><br>
+Also called Indian gooseberry, amla is high in vitamin C and is effective in removing dandruff. Add it to a hair rinse, or mix it with tulsi leaves for an effective scalp mask.
+<br><br>
+Henna leaves<br>
+These can be used to make a paste to calm a hot or irritated scalp.
+<br>
+More readily available in dried form, a paste of henna, enhanced with fragrant and calming aromatic oils, offers similar benefits.
+<br><br>
+Hibiscus<br>
+This flower helps remove stagnation from the scalp and may encourage hair growth. It can be used in dried or powdered form and applied to the hair in a mask or as a shampoo ingredient.
+<br>
+According to the green tea study above, hibiscus also showed positive results for hair growth on rats.
+<br>
+<br>
+Aromatherapy<br><br>
+Madhavi Patel, aromatherapist, facialist, and owner of Rishi Veda, suggests including aromatherapy in your hair care.
+<br>
+“Aromatherapy firstly impacts the psyche to connect the individual on an emotional level,” Patel says. She believes that scents can “bring about profound benefits and changes on an emotional, physical, and spiritual level.”
+<br><br>
+She suggests the following calming and relaxing aromas:<br>
+<br>
+<li>lavender</li>
+<li>sandalwood</li>
+<li>chamomile</li>
+<li>frankincense</li>
+<li>cedarwood</li>
+<li>woody and earthy scents</li>
+Patel notes that scent can be very personal. “What one person considers calming may not work for another.”
+<br>
+According to a 2021 review, ylang ylang and rosemary essential oils may stimulate hair follicles, but there’s no evidence that aromatherapy has a direct effect on hair growth.
+<br>
+Still, a little extra stress relief can’t hurt.
+<br>
+Scalp and hair masks<br>
+A scalp or hair mask is often used to treat undernourished areas by directly delivering nutrients where they’re most needed.
+<br>
+Herbs can treat scalp issues, like dryness and dandruff. A good hair mask also seals the nutrients in the strands.
+<br>
+To apply an herbal scalp or hair mask, first determine which ingredients you’ll use. Common mask ingredients include:
+<br>
+<li>aloe for a dry, itchy scalp</li>
+<li>lemon and neem for an oily scalp</li>
+<li>rose and sandalwood combined in light clay for an irritated scalp</li>
+<li>henna mixed with nutrient-rich oils to cool the scalp</li>
+If you want to try a hair or scalp mask, follow these steps:
+<br>
+Wash your hair before applying the mask.<br>
+Create a paste with the desired dry ingredient(s) and a suitable liquid, like water or oil. Oil is best for dry hair and scalp.
+Wash your hair with a light shampoo, and rinse before the mask has dried completely.
+Avoid blow drying your hair after the treatment for maximum benefit.
+Rinses and hair teas
+Rinses and hair teas serve as a finishing step in hair care. A rinse involves washing the hair out with water. A tea involves soaking the hair in a tub.
+<br>
+Traditionally, herbs, like neem or henna leaves, have been added directly into buckets of warm water or mixed into bath water to create herbal rinses and teas.
+<br>
+Fragrant floral additions are often used in cold water baths, including:
+<br>
+<li>rose petals</li>
+<li>jasmine buds</li>
+<li>honeysuckle</li>
+<li>hibiscus</li>
+These ingredients may calm irritated skin, including the scalp, and leave behind a sweet, pleasant scent.
+<br><br>
+Keep in mind<br>
+As mentioned above, hair issues can be best treated by first addressing dosha imbalance through mental health and diet.
+<br>
+Although it isn’t a quick fix, the wisdom of Ayurveda focuses on holistic solutions rather than remedies that only target symptoms.
+<br>
+“Keep in mind that Ayurveda addresses systemic imbalances that can manifest in the hair,” Abdullah says. “The solution is rarely restricted to the hair itself, but is one that addresses a deeper issue.”
+<br>
+For instance, this means that herbs and oils aren’t meant to solely address frizzy hair or dandruff. They’re designed to treat the whole person.
+<br>
+“Red, itchy scalp can be from too much heat in the system,” Abdullah says.
+<br>
+This means that applying aloe vera to the scalp would help provide coolness and hydration, but it wouldn’t necessarily address the systemic issue.
+<br>
+However, frequent application over time is a good start.
+<br>
+When left untreated, dosha imbalances allow problems to resurface. This includes hair loss. That’s why remedies should be part of a larger, integrated approach toward self-care and wellness.
+ <br><h4>References-https://www.healthline.com/health/beauty-skin-care/indian-home-remedies-for-hair-growth#aromatherapy</h4>
+
+ <script>
+    function redirectToNextPage() {
+        
+        window.location.href = "bot.html";
+    }
+</script>
+        </h3>
+
+           
+    </div>
+</body>
+</html>

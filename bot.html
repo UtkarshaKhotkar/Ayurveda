@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Example</title>
+    <style>
+        body {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color:#eee2b3;
+            background-image: url("nat.gif");
+    background-size:cover; /* or contain, depending on how you want the image to fit */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+        }
+
+        .chat-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #141313;
+            background-color: #fcfbf9;
+        }
+
+        .chat-box {
+            height: 450px;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+            border: 1px solid #0b0b0b;
+            padding: 10px;
+        }
+
+        .user-msg {
+            margin-bottom: 5px;
+        }
+
+        .bot-msg {
+            margin-bottom: 5px;
+            color: blue;
+        }
+
+        #user-input {
+            width: calc(100% - 60px);
+            padding: 8px;
+            margin-right: 10px;
+        }
+
+        #send-btn {
+            padding: 8px 15px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+        #heading {
+            text-align: center;
+            align-items: flex-end;
+        }
+        header {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            margin-left: auto; 
+        }
+
+        img {
+            margin-right: auto; 
+            max-width: 100%; 
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ayurveda</h1>
+        <img src="hb1.jpg" height="100" width="150">
+    </header>
+    <nav>
+        <a href="about.html">About </a>
+        <a href="Home.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="qna.html">FAQ's</a>
+    </nav>
+    </style>
+</head>
+
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+        <button id="send-btn" onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var userInput = document.getElementById("user-input").value.trim();
+            var chatBox = document.getElementById("chat-box");
+
+            if (userInput === "") return;
+
+            chatBox.innerHTML += `<div class="user-msg">${userInput}</div>`;
+            var botResponse = getBotResponse(userInput);
+            chatBox.innerHTML += `<div class="bot-msg">${botResponse}</div>`;
+
+            document.getElementById("user-input").value = "";
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
+        }
+
+        function getBotResponse(userInput) {
+            var response;
+
+            switch(userInput.toLowerCase()) {
+                case "hi":
+                case "hello":
+                    response = "Hello! How can I assist you?";
+                    break;
+
+                case "how are you?":
+                    response = "I'm just a chatbot, but thank you for asking!";
+                    break;
+
+                    case "who made you?":
+                    response = "I am developed and implemented by Utkarsha Khotkar.";
+                    break;
+
+                case "what is your name?":
+                    response = "My name is AyurBot.";
+                    break;
+
+                case "what can you do?":
+                    response = "I can provide information, answer questions, or assist you with any Ayurvedic question you might need.";
+                    break;
+
+                case "what is the ayurvedic solution for cold and cough?":
+                    response = "There are many ayurvedic solutions for cold and cough. Some of them are: chewing tulsi leaves, having tulsi tea, having 1 tablespoon honey in morning. However if more problems are faced, it is advised to consult a doctor. For more information visit site Ayurveda.";
+                    break;
+
+                case "what is the ayurvedic solution for headache?":
+                    response = "There are many ayurvedic solutions for Headache. Some of them are: mixing cloves, sugar, and water and having the mixture, mixing Ginger, Basil leaves, and a cup of water and having in the morning.However, if more problems are faced, it is advised to consult a doctor. For more information visit Ayurveda.";
+                    break;
+                    
+                case "what is the solution for hair problems?":
+                    response = "There are many ayurvedic solutions for hair problems. Some of them are healthy mind and emotions,optimal nutrition,hair oiling and washing etc. However if more problems are faced, it is advised to consult a doctor. For more information visit Ayurveda";
+                    break;
+
+                    case "are there ayurvedic solutions for all disease?":
+                    response = "There are ayurvedic solutions for almost all diseases yet many are yet to be discovered.";
+                    break;
+
+                    
+                    case " what is the secret of well-being?":
+                    response = "Ayurveda accepts that each of us needs to make sense of and see our own path in order to follow it consciously. This philosophy of life preaches understanding and points out ways to achieve harmony.For more information visit Ayurveda";
+                    break;
+
+                    case "does Ayurveda cure viruses?":
+                    response = "A variety of herbs are used in Indian medicine, most of which are suitable for hot decoctions.Teas with ginger, cinnamon and black pepper in a variety of combinations have anti-inflammatory and antiviral applications. In order for the immune system to be strong, therapeutic massages are performed and exercises for proper breathing are practiced. For more information visit Ayurveda";
+                    break;
+
+                    case "what is the modern application of ayurveda??":
+                    response = "Due to stress, tension and illness, more and more people are looking for an alternative to achieving a better life. In Ayurveda, they find ways to restore the disturbed balance. This becomes a philosophy for making sense of life, a way to get rid of negative thoughts, exercises to restore tone and achieve harmony.That is why all over the world there are Ayurveda clinics and centers where you can benefit from millennial experience. In Bulgaria, therapies, yoga courses and practices are organized under the guidance of occupational therapists. For more information visit Ayurveda";
+                    break;
+
+                    case "how are Ayurveda practices done at home?":
+                    response = "The goal of the program is to feel a surge of new energy after a few days, to feel relief from the health problems and to build on learned practices at home. Many of the exercises and recipes are quite possible to take place at home.";
+                    break;
+
+                    case "Where can we get herbs, oils and medicines for home use?":
+                    response = "In order to be guaranteed original, eco and quality products, it is best to look for them in specialized Ayurveda centers. There they will advise you on how to apply them.";
+                    break;
+                    case "what is ayurveda?":
+                    response = "Ayurveda (a Sanskrit word that means science of life or knowledge of life) is one of the world's oldest whole-body healing systems. It was developed more than 5,000 years ago in India.Ayurveda is based on the belief that health and wellness depend on a delicate balance between the mind, body, spirit, and environment. The main goal of ayurvedic medicine is to promote good health and prevent, not fight, disease. But treatments may be geared toward specific health problems.";
+                    break;
+
+                    
+                default:
+                    response = "I'm sorry, I don't understand that question.Please try something else";
+                    
+            }
+
+            return response;
+        }
+    </script>
+</body>
+</html>

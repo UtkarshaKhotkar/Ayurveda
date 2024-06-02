@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            display: flex;
+            
+        }
+        #sidebar {
+            width: 200px;
+            height: auto;
+            background-color: #eee2b3;
+            padding: 5px;
+            
+        }
+        #content {
+            flex: 1;
+            padding: 30px;
+            
+        }
+        #sidebar ul {
+            list-style-type: none;
+            padding: 20px;
+        }
+        #sidebar ul li {
+            margin-bottom: 50px;
+        }
+        #sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        #sidebar ul li a:hover {
+            color: #555;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+        #heading {
+            text-align: center;
+            align-items: flex-end;
+        }
+        header {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            margin-left: auto; 
+        }
+
+        img {
+            margin-right: auto; 
+            max-width: 100%; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ayurveda</h1>
+        <img src="hb1.jpg" height="100" width="150">
+    </header>
+    <button onclick="redirectToNextPage()" style="margin-bottom: 20px;">Ask here!</button>
+    <nav>
+        <a href="about.html">About </a>
+        <a href="Home.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="qna.html">FAQ's</a>
+        
+    </nav>
+    
+    <div id="container">
+        <div id="sidebar">
+            <ul style=>
+                <li><a href="problems.html">Problems and their solutions</a></li>
+                <li><a href="tips.html">Tips with Ayurveda</a></li>
+                <li><a href="hist.html">History of Ayurveda</a></li>
+                <li><a href="herb.html">Ayurvedic herbs </a></li>
+                <li><a href="about.html">About us </a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Ayurvedic Herbs</h1>
+            <h3> Ayurveda is a traditional Indian system of medicine. It aims to preserve health and wellness by keeping the mind, body, and spirit in balance and preventing disease rather than treating it.
+                <br>
+                To do so, it employs a holistic approach that combines diet, exercise, and lifestyle changes .
+                <br>
+                Ayurvedic herbs and spices are also an important component of this approach. They’re thought to protect your body from disease and offer a variety of health benefits, including improved digestion and mental health.
+                <br><br>
+                Here are some Ayurvedic herbs and spices with science-backed health benefits.<br><br>
+                1. Ashwagandha<br>
+                <img src="ashwa.jpg" height="150" width="250">
+                Ashwagandha (Withania somnifera) is a small woody plant native to India and North Africa. Its root and berries are used to produce a very popular Ayurvedic remedy .
+                <br>
+                It’s considered an adaptogen, which means that it’s believed to help your body manage stress more effectively. Research has shown that it reduces levels of cortisol, a hormone that your adrenal glands produce in response to stress .
+                <br>
+                There’s also evidence linking ashwagandha to lower levels of anxiety and improved sleep in people with stress and anxiety disorders .
+                <br>
+                Moreover, research shows that ashwagandha may enhance muscle growth, memory, and male fertility, as well as lower blood sugar levels. However, larger studies are needed to confirm these benefits .
+                <br>
+                Finally, there’s evidence that it may help reduce inflammation and boost your immune system, though more studies are needed .<br><br>
+                2. Boswellia<br>
+                <img src="bos.jgp.jpg" height="150" width="250">
+                Boswellia, also known as Indian frankincense or olibanum, is made from the resin of the Boswellia serrata tree. It’s known for its easily recognizable spicy, woody aroma.
+                <br>
+                Research suggests that it may be particularly effective at reducing inflammation by preventing the release of inflammation-causing compounds known as leukotrienes .
+                <br>
+                Human studies link boswellia to reduced pain, improved mobility, and a greater range of movement in people with osteoarthritis and rheumatoid arthritis. It may also help prevent oral infections and fight gingivitis .
+                <br>
+                Moreover, it may improve digestion in people with ulcerative colitis and Crohn’s disease, as well as breathing in people with chronic asthma, but more controlled human studies are needed .<br><br>
+                3. Brahmi<br>
+                <img src="br.jpg" height="150" width="250">
+                According to test-tube and animal studies, brahmi appears to have strong anti-inflammatory properties. More human studies are needed to confirm these potential anti-inflammatory benefits are as effective as common NSAIDs .
+
+Studies also link it to improvements in learning rates, attention, memory, and information processing, as well as reduced symptoms of attention deficit hyperactivity disorder (ADHD), such as inattention, impulsivity, poor self-control, and restlessness .
+
+However, other human studies have shown mixed results on these benefits. <br><br>
+4. Cumin<br>
+<img src="cu.jpg" height="150" width="250">
+Cumin is a spice native to the Mediterranean and Southwest Asia. It’s made from the seeds of the Cuminum cyminum plant, which are known for their distinctive earthy, nutty, and spicy flavor.
+
+Some animal studies show cumin to be beneficial in controlling blood lipids and protecting the liver from a high fat diet .
+
+Plus, cumin may protect against type 2 diabetes by lowering blood sugar levels and improving insulin sensitivity. It may also protect against heart disease by increasing HDL (good) cholesterol while reducing triglycerides and LDL (bad) cholesterol.
+
+Some studies show bioactive compounds in cumin may have anti-inflammatory action, but these studies did not confirm any effects on diabetes, insulin sensitivity or heart disease .
+
+Cumin likewise appears to possess antimicrobial properties that may reduce the risk of certain foodborne infections. Still, more studies are needed to confirm this . <br><br>
+
+5. Turmeric<br>
+<img src="tur.jpg" height="150" width="250">
+Turmeric, the spice that gives curry its characteristic yellow color, is another popular Ayurvedic remedy.
+
+Curcumin, its main active compound, has powerful antioxidant and anti-inflammatory properties. Test-tube research shows that it may be equally or even more effective than some anti-inflammatory drugs — without all of their side effects .
+
+Also, turmeric may help protect against heart disease, in part by improving blood flow as effectively as exercise or certain pharmaceutical drugs .
+
+Human studies suggest tumeric may improve symptoms of depression and anxiety .
+
+Moreover, compounds in turmeric may help preserve brain function by increasing brain levels of brain-derived neurotrophic factor (BDNF). Low levels of BDNF have been linked to disorders like Alzheimer’s and depression .<br><br>
+
+6. Licorice root<br>
+<img src="lic.jpg" height="150" width="250">
+Licorice root, which is native to Europe and Asia, comes from the Glycyrrhiza glabra plant and holds a central place in Ayurvedic medicine.
+
+Test-tube and human studies suggest that licorice root may help reduce inflammation and fight viruses and bacteria. It also appears to offer relief from a sore throat and promote oral health by protecting against dental cavities and Candida .
+
+This Ayurvedic spice may likewise help prevent or manage heartburn, bloating, nausea, belching, and stomach ulcers. When applied to the skin, it may reduce symptoms of skin rash, including redness, itching, and swelling .
+            </h3>
+            <h4>References: https://www.healthline.com/nutrition/ayurvedic-herbs</h4>
+            <script>
+                function redirectToNextPage() {
+                    
+                    window.location.href = "bot.html";
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
